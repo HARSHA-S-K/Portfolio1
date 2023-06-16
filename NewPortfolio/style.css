@@ -10,14 +10,18 @@ html
 }
 body
 {
-    height: 200vh;
-    background-color: rgb(60, 60, 60);
+    /* height: 200vh; */
+    /* background-color: rgb(60, 60, 60); */
     background-image: url('bg-01.jpg');
-    background-attachment:local;
+    background-size: cover;
+    /* background-attachment:local; */
 }
 section
 {
     box-sizing: border-box;
+}
+a{
+    text-decoration: none;
 }
 .navbar
 {
@@ -83,19 +87,32 @@ section
 }
 #home
 {
-    background-color: aqua;
+    background-color: transparent;
     height: 1000px;
-    background-attachment:fixed;
-    background-image: url('bg-01.jpg');
+    /* background-attachment:fixed; */
+    /* background-image: url('bg-01.jpg'); */
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
 }
+
+.item1 img{
+    max-width: 300px;
+    width: 100%;
+    
+}
 #about
 {
-    background-color:rgb(225, 225, 225);
-    height: 1000px;
+    background-color: transparent;    
+    /* max-height: 1000px; */
+    padding: 10rem 0rem;
+
 }
+
+.white__text{
+    color: white !important;
+}
+
 #projects
 {
     background-color: violet;
@@ -181,24 +198,25 @@ section
 }
 .containers
 {
-    display: flex;   
+    /* display: flex;    */
     justify-content: space-between;
-    padding-left: -100px;
+    /* padding-left: -100px; */
+    gap: 1rem;
 }
 #ftype
 {
-    padding-left: 5%;
+    /* padding-left: 5%;
     padding-top: 4%;
-    margin: auto;
+    margin: auto; */
 }
 .item1
 {
         margin: auto;
         /* background-color: #65e0ff; */
-        width: 60%;
+        /* width: 60%; */
         /* border: 5px solid black; */
-        display: flex;
-        flex-direction: row;
+        /* display: flex; */
+        /* flex-direction: row; */
         flex-wrap: wrap;
         justify-content: space-between;
         justify-content: center;
@@ -211,20 +229,40 @@ section
 {
     text-decoration: none;
     margin: auto;
-    color: black;
-    width: 120%;
-    padding-left: 300px;
+    /* color: black; */
+    /* width: 120%; */
+    /* padding-left: 300px; */
     font-size: 1.75em;
 }
 .item2 h1
 {
-    color: rgb(0, 0, 0);
+    /* color: rgb(0, 0, 0); */
     text-decoration: none;
 }
-@media (min-width: 600px)
+
+.content__wrapper{
+    /* background-image: url(bg-01.jpg); */
+    background-color: transparent;
+}
+
+@media (max-width: 600px)
 {
     .mid
     {
         display: block;
+    }
+    .type{
+        padding: 1rem 1rem;
+    }
+    .container{
+        padding: 0rem 0rem !important;
+    }
+
+    .ftype{
+        padding: 1rem 1rem !important;
+    }
+
+    .header__wrapper{
+        display: none;
     }
 }
